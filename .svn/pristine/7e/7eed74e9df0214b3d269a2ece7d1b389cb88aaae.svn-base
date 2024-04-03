@@ -1,0 +1,51 @@
+package com.beaconpro.config;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+
+public class DataFromExcel {
+
+	public XSSFWorkbook workbook;
+
+	public DataFromExcel(WebDriver driver) {
+
+		this.driver = driver;
+		// TODO Auto-generated constructor stub
+	}
+
+	WebDriver driver;
+
+	public String call_the_CELL_From_Excel(String Rowpositions,
+			String CellPositions, String sheetName) {
+		String us = "";
+		try {
+
+			int reRowpositions = Integer.parseInt(Rowpositions);
+			int reCellPositions = Integer.parseInt(CellPositions);
+
+			FileInputStream in = new FileInputStream(
+					"E:\\BeaconProTestAutomation\\Input_Source\\Data_From_Excel\\Quick_Customer\\TEST DOC.xlsx");
+			workbook = new XSSFWorkbook(in);
+			XSSFSheet sheet = workbook.getSheet(sheetName);
+
+			us = sheet.getRow(reRowpositions).getCell(reCellPositions)
+					.getStringCellValue();
+
+			return us;
+
+		} catch (FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
+		}
+
+		catch (IOException ioe) {
+			ioe.printStackTrace();
+		}
+		return us;
+	}
+
+}

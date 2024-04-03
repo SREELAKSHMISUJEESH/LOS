@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>TestProject_BeaconPro</groupId>
+  <artifactId>TestProject_BeaconPro</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-java</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.testng</groupId>
+  		<artifactId>testng</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.relevantcodes</groupId>
+  		<artifactId>extentreports</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>xml-apis</groupId>
+  		<artifactId>xml-apis</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>net.sourceforge.jexcelapi</groupId>
+  		<artifactId>jxl</artifactId>
+  	</dependency>
+  </dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.seleniumhq.selenium</groupId>
+  			<artifactId>selenium-java</artifactId>
+  			<version>2.53.0</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.testng</groupId>
+  			<artifactId>testng</artifactId>
+  			<version>6.9.9</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>com.relevantcodes</groupId>
+  			<artifactId>extentreports</artifactId>
+  			<version>2.40</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.poi</groupId>
+  			<artifactId>poi-ooxml</artifactId>
+  			<version>3.9</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>xml-apis</groupId>
+  			<artifactId>xml-apis</artifactId>
+  			<version>1.4.01</version>
+  		</dependency>
+  		<!-- http://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.14</version>
+</dependency>
+  		<dependency>
+  			<groupId>net.sourceforge.jexcelapi</groupId>
+  			<artifactId>jxl</artifactId>
+  			<version>2.6.12</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  <name>Test automation Project Beaconpro</name>
+  <description>Test automation project for BeaconPro CBS</description>
+</project>

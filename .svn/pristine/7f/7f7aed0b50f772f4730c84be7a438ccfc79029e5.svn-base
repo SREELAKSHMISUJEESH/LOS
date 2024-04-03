@@ -1,0 +1,25 @@
+package com.beaconpro.module.uiobject.clearing;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class OutStationReturnpage {
+	public WebDriver driver;
+	
+	@FindBy(xpath=".//*[@id='ctl00_ctl00_CPH1_PRDCNT_ucSearchInfo_ddlBranch_ddl']")
+	public WebElement Branch;
+	
+	@FindBy(xpath=".//*[@id='ctl00_ctl00_CPH1_PRDCNT_ucSearchInfo_ddlBank_ddl']")
+	public WebElement AgentBank;
+	
+	@FindBy(xpath=".//*[@id='ctl00_ctl00_CPH1_PRDCNT_ucSearchInfo_ddlClearingType_ddl']")
+	public WebElement ClearingType;
+	
+	@FindBy(xpath=".//*[@id='ctl00_ctl00_CPH1_PRDCNT_ucSearchInfo_txtRegNo_txt']")
+	public WebElement RegNo;
+	
+	
+	
+
+}
